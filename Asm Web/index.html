@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Xiaomi Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#" class="logo-link home-link">
+                <svg height="50px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <circle cx="512" cy="512" r="512" style="fill:#ff6900"></circle>
+                        <path d="M512 256c-85 0-154.54 5.44-202.82 53.67S256 427.37 256 512.26s4.91 154.35 53.21 202.6S427 768 512 768s154.52-4.91 202.79-53.14S768 597.12 768 512.26s-5-154.52-53.38-202.75S596.86 256 512 256zM360.66 414h120c31.36 0 64.15 1.45 80.3 17.64 15.91 15.91 17.64 47.64 17.71 78.42v96.85a3.2 3.2 0 0 1-3.27 3.09h-41.53a3.2 3.2 0 0 1-3.24-3.16v-98.5c0-17.19-1-34.86-9.9-43.75-7.64-7.68-21.89-9.41-36.69-9.77H408.7a3.2 3.2 0 0 0-3.22 3.14v148.93a3.2 3.2 0 0 1-3.24 3.16h-41.58a3.2 3.2 0 0 1-3.2-3.16V417.15a3.2 3.2 0 0 1 3.2-3.15zm258.79 0H661a3.2 3.2 0 0 1 3.2 3.2v189.7a3.2 3.2 0 0 1-3.2 3.1h-41.54a3.2 3.2 0 0 1-3.22-3.16V417.15a3.2 3.2 0 0 1 3.22-3.18zm-173.16 75.56h43.65a3.17 3.17 0 0 1 3.2 3.14v114.17a3.2 3.2 0 0 1-3.2 3.16h-43.65a3.2 3.2 0 0 1-3.24-3.16V492.69a3.2 3.2 0 0 1 3.24-3.13z" style="fill:#fff"></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <nav class="menu-left">
+            <ul>
+                <li><a href="#" data-section="mobile-section">Mobile</a></li>
+                <li><a href="#" data-section="wearables-section">Wearables</a></li>
+                <li><a href="#" data-section="smart-home-section">Smart Home</a></li>
+                <li><a href="#" data-section="lifestyle-section">Lifestyle</a></li>
+                <li><a href="#" data-section="poco-section">POCO</a></li>
+            </ul>
+        </nav>
+        <nav class="menu-right">
+            <ul>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-cart cart-icon"></i>
+            <div class="user-icon-wrapper">
+                <i class="fas fa-user"></i>
+                <div class="user-popover">
+                    <a href="Signup.html" class="popover-item logout-link">Log Out</a>
+                    <a href="#" class="popover-item">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nội dung chính (Slider, Sản phẩm, Explore Xiaomi) -->
+    <div class="main-content">
+        <!-- Slider tự viết -->
+        <div class="custom-slider">
+            <div class="slides">
+                <div class="slide"><img src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15/pc/2fb551f068f8de5461069dab5cf84556.jpg?f=webp" alt="Slide 1"></div>
+                <div class="slide"><img src="https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-14-pro-5g/PC/0dbffe749e83d49437b2c0e2765ae12f.jpg?f=webp" alt="Slide 2"></div>
+                <div class="slide"><img src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15-ultra/pc/8d37a7f2e7af06521ae6b5f32924d141.jpg?f=webp" alt="Slide 3"></div>
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+
+        <!-- Phần sản phẩm điện thoại Xiaomi (bằng tiếng Anh) -->
+        <section class="products">
+            <h2>Xiaomi Smartphones</h2>
+            <div class="product-list">
+                <!-- Sản phẩm 1 -->
+                <div class="product-item" data-product-id="1" data-images='{"main": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1677427681.17943185.png", "sub1": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15/pc/0c1e0e5c3e3e8d1e7b1b1d1f9f9f9f9f.jpg", "sub2": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15/pc/7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e.jpg"}'>
+                    <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1677427681.17943185.png" alt="Xiaomi 15">
+                    <h3>Xiaomi 15</h3>
+                    <p>Snapdragon 8 Elite, Leica camera, 5500mAh battery, 90W fast charging, IP69.</p>
+                </div>
+                <!-- Sản phẩm 2 -->
+                <div class="product-item" data-product-id="2" data-images='{"main": "https://www.mobiledokan.com/media/xiaomi-15-pro-black-official-image_1.webp", "sub1": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15-pro/pc/8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f.jpg", "sub2": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15-pro/pc/9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c.jpg"}'>
+                    <img src="https://www.mobiledokan.com/media/xiaomi-15-pro-black-official-image_1.webp" alt="Xiaomi 15 Pro">
+                    <h3>Xiaomi 15 Pro</h3>
+                    <p>Snapdragon 8 Elite, Leica camera, 6000mAh battery, 90W fast charging, HyperOS 2.0.</p>
+                </div>
+                <!-- Sản phẩm 3 -->
+                <div class="product-item" data-product-id="3" data-images='{"main": "https://i.ebayimg.com/images/g/KdcAAOSwx5Znjs64/s-l1600.webp", "sub1": "https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-14-pro-5g/PC/1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e.jpg", "sub2": "https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-14-pro-5g/PC/2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f.jpg"}'>
+                    <img src="https://i.ebayimg.com/images/g/KdcAAOSwx5Znjs64/s-l1600.webp" alt="Redmi Note 14 Pro">
+                    <h3>Redmi Note 14 Pro</h3>
+                    <p>48MP camera, AMOLED display, 5000mAh battery, mid-range price.</p>
+                </div>
+                <!-- Sản phẩm 4 -->
+                <div class="product-item" data-product-id="4" data-images='{"main": "https://tse2.mm.bing.net/th?id=OIP.dvC0vogQkER2mEZRM8pVQwHaHa&pid=Api&P=0&h=220", "sub1": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f.jpg", "sub2": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a.jpg"}'>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.dvC0vogQkER2mEZRM8pVQwHaHa&pid=Api&P=0&h=220" alt="Redmi K70 Ultra">
+                    <h3>Redmi K70 Ultra</h3>
+                    <p>200MP camera, Snapdragon 8+ Gen 1, 5000mAh battery, 120W fast charging.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Modal cho sản phẩm -->
+        <div class="product-modal">
+            <div class="modal-content">
+                <span class="close-modal">×</span>
+                <div class="modal-body">
+                    <div class="modal-image-slider">
+                        <img class="modal-image" src="" alt="Product Image">
+                        <div class="modal-sub-images">
+                            <img class="modal-sub-image" data-index="0" src="" alt="Sub Image 1">
+                            <img class="modal-sub-image" data-index="1" src="" alt="Sub Image 2">
+                            <img class="modal-sub-image" data-index="2" src="" alt="Sub Image 3">
+                        </div>
+                    </div>
+                    <div class="modal-details">
+                        <h3 class="modal-title"></h3>
+                        <p class="modal-description"></p>
+                        <p class="modal-price"></p>
+                        <button class="buy-button">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phần Explore Xiaomi (hiển thị dạng slider với video) -->
+        <section class="explore-xiaomi">
+            <h2>Explore Xiaomi</h2>
+            <div class="video-slider">
+                <div class="video-slides">
+                    <!-- Video 1 -->
+                    <div class="video-slide">
+                        <iframe id="video-1" width="100%" height="400" src="https://www.youtube-nocookie.com/embed/9kF6q-7KDD4?si=0OmlbN-vCf_TkWx0" title="Xiaomi 14 Launch Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="video-content">
+                            <h3>Xiaomi HyperAI</h3>
+                            <p>Your daily productivity</p>
+                            <a href="https://www.mi.com/global/brand/ai/xiaomi-hyperai#:~:text=Powered%20by%20cloud-based%20AI%20technology%2C%20automatically%20converts%20speech,calls%2C%20or%20online%20meetings%2C%20making%20conference%20communication%20seamless." target="_blank">
+                                <button class="learn-more">Learn more</button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="video-slide">
+                        <iframe id="video-2" width="100%" height="400" src="https://www.youtube-nocookie.com/embed/X-w_Jh8z0gk?si=wm0WGMpkRsg_Co6B" title="Redmi Note 13 Pro Promo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="video-content">
+                            <h3>Xiaomi 15</h3>
+                            <p>Take the light, own the glow - Liquid Silver, the latest sleek style</p>
+                            <a href="https://www.mi.com/global/product/xiaomi-15/specs/" target="_blank">
+                                <button class="learn-more">Learn more</button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="video-slide">
+                        <iframe id="video-3" width="100%" height="400" src="https://www.youtube-nocookie.com/embed/DNR3euxnJRM?si=YP_U-nnyOEgBGHU9" title="Xiaomi x Leica Campaign" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="video-content">
+                            <h3>Xiaomi HyperOS 2</h3>
+                            <p>Faster, Smarter, Smoother</p>
+                            <a href="https://miuirom.org/updates/hyperos-2-release" target="_blank">
+                                <button class="learn-more">Learn more</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="video-prev">❮</button>
+                <button class="video-next">❯</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Phần Shopping Cart (ẩn mặc định) -->
+    <div class="shopping-cart" style="display: none;">
+        <div class="cart-container">
+            <h2>Your Cart</h2>
+            <div class="cart-items"></div>
+            <div class="empty-cart" style="display: block;">Your cart is empty.</div>
+            <div class="cart-total" style="display: none;">
+                <h3>Total: $0</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gian hàng Mobile (ẩn mặc định) -->
+    <section class="store-section mobile-section" style="display: none;">
+        <div class="products">
+            <h2>Mobile</h2>
+            <div class="product-list">
+                <div class="product-item" data-product-id="1" data-images='{"main": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15/pc/2fb551f068f8de5461069dab5cf84556.jpg", "sub1": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15/pc/0c1e0e5c3e3e8d1e7b1b1d1f9f9f9f9f.jpg", "sub2": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15/pc/7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e.jpg"}'>
+                    <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1677427681.17943185.png" alt="Xiaomi 15">
+                    <h3>Xiaomi 15</h3>
+                    <p>Snapdragon 8 Elite, Leica camera, 5500mAh battery, 90W fast charging, IP69.</p>
+                </div>
+                <div class="product-item" data-product-id="2" data-images='{"main": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15-pro/pc/6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d.jpg", "sub1": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15-pro/pc/8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f.jpg", "sub2": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-15-pro/pc/9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c.jpg"}'>
+                    <img src="https://www.mobiledokan.com/media/xiaomi-15-pro-black-official-image_1.webp" alt="Xiaomi 15 Pro">
+                    <h3>Xiaomi 15 Pro</h3>
+                    <p>Snapdragon 8 Elite, Leica camera, 6000mAh battery, 90W fast charging, HyperOS 2.0.</p>
+                </div>
+                <div class="product-item" data-product-id="3" data-images='{"main": "https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-14-pro-5g/PC/0dbffe749e83d49437b2c0e2765ae12f.jpg", "sub1": "https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-14-pro-5g/PC/1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e.jpg", "sub2": "https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-14-pro-5g/PC/2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f.jpg"}'>
+                    <img src="https://i.ebayimg.com/images/g/KdcAAOSwx5Znjs64/s-l1600.webp" alt="Redmi Note 14 Pro">
+                    <h3>Redmi Note 14 Pro</h3>
+                    <p>48MP camera, AMOLED display, 5000mAh battery, mid-range price.</p>
+                </div>
+                <div class="product-item" data-product-id="4" data-images='{"main": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e.jpg", "sub1": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f.jpg", "sub2": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a.jpg"}'>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.dvC0vogQkER2mEZRM8pVQwHaHa&pid=Api&P=0&h=220" alt="Redmi K70 Ultra">
+                    <h3>Redmi K70 Ultra</h3>
+                    <p>200MP camera, Snapdragon 8+ Gen 1, 5000mAh battery, 120W fast charging.</p>
+                </div>
+                <!-- Thêm 4 sản phẩm mới cho Mobile -->
+                <div class="product-item" data-product-id="21" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-pad-6s-pro/images/xiaomi-pad-6s-pro-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-pad-6s-pro/images/xiaomi-pad-6s-pro-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-pad-6s-pro/images/xiaomi-pad-6s-pro-list-3.png"}'>
+                    <img src="https://www.iphone-droid.net/spec/wp-content/uploads/2024/02/Xiaomi-Pad-6S-Pro-12.4-Black.jpg" alt="Xiaomi Pad 6S Pro">
+                    <h3>Xiaomi Pad 6S Pro</h3>
+                    <p>12.4 inch 3K display, Snapdragon 8 Gen 2, 10000mAh battery, 120W fast charging.</p>
+                </div>
+                <div class="product-item" data-product-id="22" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-pad-se/images/redmi-pad-se-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-pad-se/images/redmi-pad-se-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-pad-se/images/redmi-pad-se-list-3.png"}'>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.-ou54VJYS2JFo3yUkprDXAHaHa&pid=Api&P=0&h=220" alt="Redmi Pad SE">
+                    <h3>Redmi Pad SE</h3>
+                    <p>11 inch FHD+ display, Snapdragon 680, 8000mAh battery, budget-friendly.</p>
+                </div>
+                <div class="product-item" data-product-id="23" data-images='{"main": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/xiaomi-14t-pro.jpg", "sub1": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/xiaomi-14t-pro-sub1.jpg", "sub2": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/xiaomi-14t-pro-sub2.jpg"}'>
+                    <img src="https://specs-arena.com/wp-content/uploads/2023/09/Xiaomi-13T-Pro-3-600x600.webp" alt="Xiaomi 14T Pro">
+                    <h3>Xiaomi 14T Pro</h3>
+                    <p>Dimensity 9300+, 6.67 inch AMOLED 144Hz, 50MP Leica camera, 5000mAh battery.</p>
+                </div>
+                <div class="product-item" data-product-id="24" data-images='{"main": "https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-14-pro-5g/PC/0dbffe749e83d49437b2c0e2765ae12f.jpg", "sub1": "https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-14-pro-5g/PC/1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e.jpg", "sub2": "https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-14-pro-5g/PC/2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f.jpg"}'>
+                    <img src="https://www.mobiledokan.com/media/xiaomi-redmi-note-14-green-official-image.webp" alt="Redmi Note 14 Pro">
+                    <h3>Redmi Note 14 Pro</h3>
+                    <p>6.67 inch AMOLED 120Hz, Snapdragon 7 Gen 2, 50MP camera, 5500mAh battery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gian hàng Wearables (ẩn mặc định) -->
+    <section class="store-section wearables-section" style="display: none;">
+        <div class="products">
+            <h2>Wearables</h2>
+            <div class="product-list">
+                <div class="product-item" data-product-id="5" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-watch-s1-active/images/mi-watch-s1-active-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-watch-s1-active/images/mi-watch-s1-active-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-watch-s1-active/images/mi-watch-s1-active-list-3.png"}'>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.UMpUMzTs8S2RvISRHlh4_wHaHN&pid=Api&P=0&h=220" alt="Mi Watch S1">
+                    <h3>Mi Watch S1</h3>
+                    <p>AMOLED display, 14-day battery life, SpO2 monitoring.</p>
+                </div>
+                <div class="product-item" data-product-id="6" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-band-7/images/mi-band-7-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-band-7/images/mi-band-7-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-band-7/images/mi-band-7-list-3.png"}'>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.gLILQWuGjSLhx4bGftwGGwHaIs&pid=Api&P=0&h=220" alt="Mi Band 7">
+                    <h3>Mi Band 7</h3>
+                    <p>1.62\" AMOLED display, 14-day battery, 120 sports modes.</p>
+                </div>
+                <div class="product-item" data-product-id="7" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-watch-3/images/redmi-watch-3-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-watch-3/images/redmi-watch-3-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-watch-3/images/redmi-watch-3-list-3.png"}'>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.sVH8PWAb2oOEwbR11GW7QwHaIZ&pid=Api&P=0&h=220" alt="Redmi Watch 3">
+                    <h3>Redmi Watch 3</h3>
+                    <p>1.75\" AMOLED, GPS, 12-day battery life.</p>
+                </div>
+                <div class="product-item" data-product-id="8" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-watch-lite/images/mi-watch-lite-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-watch-lite/images/mi-watch-lite-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-watch-lite/images/mi-watch-lite-list-3.png"}'>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.jnxyxP_zDOY9Lj3Qbnvl_gHaIo&pid=Api&P=0&h=220" alt="Mi Watch Lite">
+                    <h3>Mi Watch Lite</h3>
+                    <p>1.4\" TFT display, 9-day battery, 5ATM water resistance.</p>
+                </div>
+                <!-- Thêm 4 sản phẩm mới cho Wearables -->
+                <div class="product-item" data-product-id="25" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-watch-s3/images/xiaomi-watch-s3-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-watch-s3/images/xiaomi-watch-s3-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-watch-s3/images/xiaomi-watch-s3-list-3.png"}'>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.7_wVSdeudQuIuSfZAJSxWwHaIS&pid=Api&P=0&h=220" alt="Xiaomi Watch S3">
+                    <h3>Xiaomi Watch S3</h3>
+                    <p>1.43 inch AMOLED, heart rate, SpO2, 15-day battery life.</p>
+                </div>
+                <div class="product-item" data-product-id="26" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-buds-5-pro/images/redmi-buds-5-pro-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-buds-5-pro/images/redmi-buds-5-pro-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-buds-5-pro/images/redmi-buds-5-pro-list-3.png"}'>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.npV7BW4D0CtDGSl_SrG7nwHaI9&pid=Api&P=0&h=220" alt="Redmi Buds 5 Pro">
+                    <h3>Redmi Buds 5 Pro</h3>
+                    <p>Hi-Res audio, 46dB ANC, 38-hour battery life.</p>
+                </div>
+                <div class="product-item" data-product-id="27" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-band-9/images/xiaomi-smart-band-9-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-band-9/images/xiaomi-smart-band-9-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-band-9/images/xiaomi-smart-band-9-list-3.png"}'>
+                    <img src="https://m.media-amazon.com/images/I/71kigOmAPIL.jpg" alt="Xiaomi Smart Band 9">
+                    <h3>Xiaomi Smart Band 9</h3>
+                    <p>1.62 inch AMOLED, heart rate, SpO2, 21-day battery life.</p>
+                </div>
+                <div class="product-item" data-product-id="28" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-watch-4/images/redmi-watch-4-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-watch-4/images/redmi-watch-4-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-watch-4/images/redmi-watch-4-list-3.png"}'>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.5qWTA-gacv9NyLzoUphwBwHaHa&pid=Api&P=0&h=220" alt="Redmi Watch 4">
+                    <h3>Redmi Watch 4</h3>
+                    <p>1.97 inch AMOLED, Bluetooth calling, 20-day battery life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gian hàng Smart Home (ẩn mặc định) -->
+    <section class="store-section smart-home-section" style="display: none;">
+        <div class="products">
+            <h2>Smart Home</h2>
+            <div class="product-list">
+                <div class="product-item" data-product-id="9" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-smart-air-fryer/images/mi-smart-air-fryer-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-smart-air-fryer/images/mi-smart-air-fryer-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-smart-air-fryer/images/mi-smart-air-fryer-list-3.png"}'>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.X6oFbWecI4eKJv-VPoWq_QHaHa&pid=Api&P=0&h=220" alt="Mi Smart Air Fryer">
+                    <h3>Mi Smart Air Fryer</h3>
+                    <p>3.5L capacity, app control, voice control with Alexa, 1500W power.</p>
+                </div>
+                <div class="product-item" data-product-id="10" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-robot-vacuum-mop-2/images/mi-robot-vacuum-mop-2-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-robot-vacuum-mop-2/images/mi-robot-vacuum-mop-2-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-robot-vacuum-mop-2/images/mi-robot-vacuum-mop-2-list-3.png"}'>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.de_7tG-az0O6v6cDFeVC_gHaHa&pid=Api&P=0&h=220" alt="Mi Robot Vacuum-Mop 2">
+                    <h3>Mi Robot Vacuum-Mop 2</h3>
+                    <p>2200Pa suction, smart mapping, app control, mopping function.</p>
+                </div>
+                <div class="product-item" data-product-id="11" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-smart-bulb/images/mi-smart-bulb-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-smart-bulb/images/mi-smart-bulb-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-smart-bulb/images/mi-smart-bulb-list-3.png"}'>
+                    <img src="https://www.powerplanetonline.com/cdnassets/bombilla_inteligente_xiaomi_mi_led_smart_bulb_essential_white_and_color_02_ad_l.jpg" alt="Mi Smart LED Bulb">
+                    <h3>Mi Smart LED Bulb</h3>
+                    <p>16 million colors, app control, voice control, energy-saving.</p>
+                </div>
+                <div class="product-item" data-product-id="12" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-security-camera/images/mi-security-camera-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-security-camera/images/mi-security-camera-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-security-camera/images/mi-security-camera-list-3.png"}'>
+                    <img src="https://www.powerplanetonline.com/cdnassets/xiaomi_mi_360_camera_1080p_01_l.jpg" alt="Mi 360° Home Security Camera">
+                    <h3>Mi 360° Home Security Camera</h3>
+                    <p>2K resolution, 360° view, motion detection, night vision.</p>
+                </div>
+                <!-- Thêm 4 sản phẩm mới cho Smart Home -->
+                <div class="product-item" data-product-id="29" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-robot-vacuum-x20-plus/images/xiaomi-robot-vacuum-x20-plus-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-robot-vacuum-x20-plus/images/xiaomi-robot-vacuum-x20-plus-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-robot-vacuum-x20-plus/images/xiaomi-robot-vacuum-x20-plus-list-3.png"}'>
+                    <img src="https://www.eshtir.com/wp-content/uploads/2024/07/Xiaomi-vacuum-cleaner-X20-white-13-900x900.webp" alt="Xiaomi Robot Vacuum X20+">
+                    <h3>Xiaomi Robot Vacuum X20+</h3>
+                    <p>6000Pa suction, self-cleaning mop, app control, smart mapping.</p>
+                </div>
+                <div class="product-item" data-product-id="30" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-air-purifier-4-pro/images/xiaomi-smart-air-purifier-4-pro-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-air-purifier-4-pro/images/xiaomi-smart-air-purifier-4-pro-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-air-purifier-4-pro/images/xiaomi-smart-air-purifier-4-pro-list-3.png"}'>
+                    <img src="https://cdn.webshopapp.com/shops/256009/files/398193256/xiaomi-xiaomi-smart-air-purifier-4-pro.jpg" alt="Xiaomi Smart Air Purifier 4 Pro">
+                    <h3>Xiaomi Smart Air Purifier 4 Pro</h3>
+                    <p>99.97% PM2.5 filtration, 60m² coverage, OLED display, app control.</p>
+                </div>
+                <div class="product-item" data-product-id="31" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-camera-c300/images/xiaomi-smart-camera-c300-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-camera-c300/images/xiaomi-smart-camera-c300-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-camera-c300/images/xiaomi-smart-camera-c300-list-3.png"}'>
+                    <img src="https://m.media-amazon.com/images/I/41Ca0QgrFVL._AC_SL1200_.jpg" alt="Xiaomi Smart Camera C300">
+                    <h3>Xiaomi Smart Camera C300</h3>
+                    <p>2K resolution, 360° view, AI motion detection, two-way audio.</p>
+                </div>
+                <div class="product-item" data-product-id="32" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-doorbell-3/images/xiaomi-smart-doorbell-3-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-doorbell-3/images/xiaomi-smart-doorbell-3-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-doorbell-3/images/xiaomi-smart-doorbell-3-list-3.png"}'>
+                    <img src="https://www.powerplanetonline.com/cdnassets/videoportero_xiaomi_smart_doorbell_3_01_l.jpg" alt="Xiaomi Smart Doorbell 3">
+                    <h3>Xiaomi Smart Doorbell 3</h3>
+                    <p>2K resolution, face recognition, two-way audio, app control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gian hàng Lifestyle (ẩn mặc định) -->
+    <section class="store-section lifestyle-section" style="display: none;">
+        <div class="products">
+            <h2>Lifestyle</h2>
+            <div class="product-list">
+                <div class="product-item" data-product-id="13" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-electric-scooter/images/mi-electric-scooter-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-electric-scooter/images/mi-electric-scooter-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-electric-scooter/images/mi-electric-scooter-list-3.png"}'>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.J3LlHZ_8T8iSHAqgbDh5RwHaHa&pid=Api&P=0&h=220" alt="Mi Electric Scooter">
+                    <h3>Mi Electric Scooter</h3>
+                    <p>30km range, 25km/h max speed, foldable design, app control.</p>
+                </div>
+                <div class="product-item" data-product-id="14" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-air-purifier/images/mi-air-purifier-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-air-purifier/images/mi-air-purifier-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-air-purifier/images/mi-air-purifier-list-3.png"}'>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.uKRZC7AZeHxVrV_IKrGB0QHaHa&pid=Api&P=0&h=220" alt="Mi Air Purifier">
+                    <h3>Mi Air Purifier</h3>
+                    <p>HEPA filter, 400m³/h CADR, app control, quiet operation.</p>
+                </div>
+                <div class="product-item" data-product-id="15" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-electric-kettle/images/mi-electric-kettle-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-electric-kettle/images/mi-electric-kettle-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-electric-kettle/images/mi-electric-kettle-list-3.png"}'>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.sn4Nr9eOJaDwqFPEgHeG8AHaHa&pid=Api&P=0&h=220" alt="Mi Electric Kettle">
+                    <h3>Mi Electric Kettle</h3>
+                    <p>1.5L capacity, 1800W power, temperature control, stainless steel.</p>
+                </div>
+                <div class="product-item" data-product-id="16" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-backpack/images/mi-backpack-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-backpack/images/mi-backpack-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-backpack/images/mi-backpack-list-3.png"}'>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.vPOAO6mLyXgS9Je6vvZkQwHaHa&pid=Api&P=0&h=220" alt="Mi City Backpack">
+                    <h3>Mi City Backpack</h3>
+                    <p>20L capacity, water-resistant, laptop compartment, minimalist design.</p>
+                </div>
+                <!-- Thêm 4 sản phẩm mới cho Lifestyle -->
+                <div class="product-item" data-product-id="33" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-electric-scooter-4-pro/images/xiaomi-electric-scooter-4-pro-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-electric-scooter-4-pro/images/xiaomi-electric-scooter-4-pro-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-electric-scooter-4-pro/images/xiaomi-electric-scooter-4-pro-list-3.png"}'>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.HMf-c14qhcKDglKO65IsTwHaHa&pid=Api&P=0&h=220" alt="Xiaomi Electric Scooter 4 Pro">
+                    <h3>Xiaomi Electric Scooter 4 Pro</h3>
+                    <p>55km range, 25km/h max speed, 20% incline capability, foldable.</p>
+                </div>
+                <div class="product-item" data-product-id="34" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-blender/images/xiaomi-smart-blender-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-blender/images/xiaomi-smart-blender-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-blender/images/xiaomi-smart-blender-list-3.png"}'>
+                    <img src="https://www.gigahertz.com.ph/cdn/shop/products/e8b1c8a9d642e14b3ef13636247a710d.png?v=1678694012&width=959" alt="Xiaomi Smart Blender">
+                    <h3>Xiaomi Smart Blender</h3>
+                    <p>1000W power, 9 blending modes, app control, heating function.</p>
+                </div>
+                <div class="product-item" data-product-id="35" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-mijia-electric-kettle-2/images/xiaomi-mijia-electric-kettle-2-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-mijia-electric-kettle-2/images/xiaomi-mijia-electric-kettle-2-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-mijia-electric-kettle-2/images/xiaomi-mijia-electric-kettle-2-list-3.png"}'>
+                    <img src="https://m.media-amazon.com/images/I/41EJCUtXziL._AC_SL1500_.jpg" alt="Xiaomi Mijia Electric Kettle 2">
+                    <h3>Xiaomi Mijia Electric Kettle 2</h3>
+                    <p>1.7L capacity, 1800W power, 5-minute boiling, double-layer insulation.</p>
+                </div>
+                <div class="product-item" data-product-id="36" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-mijia-nail-clipper-set/images/xiaomi-mijia-nail-clipper-set-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-mijia-nail-clipper-set/images/xiaomi-mijia-nail-clipper-set-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-mijia-nail-clipper-set/images/xiaomi-mijia-nail-clipper-set-list-3.png"}'>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.A6-bj6oJ3SvCvJTICJLPdQHaHa&pid=Api&P=0&h=220" alt="Xiaomi Mijia Nail Clipper Set">
+                    <h3>Xiaomi Mijia Nail Clipper Set</h3>
+                    <p>5-piece stainless steel set, compact design, premium quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gian hàng POCO (ẩn mặc định) -->
+    <section class="store-section poco-section" style="display: none;">
+        <div class="products">
+            <h2>POCO</h2>
+            <div class="product-list">
+                <div class="product-item" data-product-id="17" data-images='{"main": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b.jpg", "sub1": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c.jpg", "sub2": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d.jpg"}'>
+                    <img src="https://sp.yimg.com/ib/th?id=OPHS.4OeQXlRgh4Afqg474C474&o=5&pid=21.1&w=160&h=105" alt="POCO F7 Pro">
+                    <h3>POCO F7 Pro</h3>
+                    <p>Snapdragon 8 Gen 2, 120Hz AMOLED, 64MP camera, 5000mAh battery.</p>
+                </div>
+                <div class="product-item" data-product-id="18" data-images='{"main": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e.jpg", "sub1": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f.jpg", "sub2": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a.jpg"}'>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.QndnYe25xqAx-recoyTQPwAAAA&pid=Api&P=0&h=220" alt="POCO C75">
+                    <h3>POCO C75</h3>
+                    <p>MediaTek Helio G81, 6.88\" HD+ 90Hz display, 50MP camera, 5160mAh battery.</p>
+                </div>
+                <div class="product-item" data-product-id="19" data-images='{"main": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b.jpg", "sub1": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c.jpg", "sub2": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d.jpg"}'>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.JWgs2ceBG_VuTJ8FKOyJ5QHaGu&pid=Api&P=0&h=220" alt="POCO X6 Pro">
+                    <h3>POCO X6 Pro</h3>
+                    <p>Dimensity 8300 Ultra, 120Hz AMOLED, 67W fast charging, 5000mAh battery.</p>
+                </div>
+                <div class="product-item" data-product-id="20" data-images='{"main": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e.jpg", "sub1": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f.jpg", "sub2": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a.jpg"}'>
+                    <img src="https://sp.yimg.com/ib/th?id=OPHS.E5b1SQc8KpsSiw474C474&o=5&pid=21.1&w=160&h=105" alt="POCO M6 Pro">
+                    <h3>POCO M6 Pro</h3>
+                    <p>Snapdragon 4 Gen 2, 6.79\" FHD+ 90Hz display, 50MP camera, 5000mAh battery.</p>
+                </div>
+                <!-- Thêm 4 sản phẩm mới cho POCO -->
+                <div class="product-item" data-product-id="37" data-images='{"main": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/poco-f6.jpg", "sub1": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/poco-f6-sub1.jpg", "sub2": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/poco-f6-sub2.jpg"}'>
+                    <img src="https://sp.yimg.com/ib/th?id=OPHS.qHPqiwsMO6UtXw474C474&o=5&pid=21.1&w=160&h=105" alt="POCO F6">
+                    <h3>POCO F6</h3>
+                    <p>Snapdragon 8s Gen 3, 6.67 inch AMOLED 120Hz, 50MP camera, 5000mAh battery.</p>
+                </div>
+                <div class="product-item" data-product-id="38" data-images='{"main": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/poco-x6-pro.jpg", "sub1": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/poco-x6-pro-sub1.jpg", "sub2": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/poco-x6-pro-sub2.jpg"}'>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.XNDUXYuYQKAEsVBvT9agyAHaHa&pid=Api&P=0&h=220" alt="POCO X6 Pro">
+                    <h3>POCO X6 Pro</h3>
+                    <p>Dimensity 8300 Ultra, 6.67 inch AMOLED 120Hz, 64MP camera, 5000mAh battery.</p>
+                </div>
+                <div class="product-item" data-product-id="39" data-images='{"main": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/poco-m6-plus-5g.jpg", "sub1": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/poco-m6-plus-5g-sub1.jpg", "sub2": "https://i01.appmifile.com/v1/MI_18455B3E4DA7060/b2c-mi-com/poco-m6-plus-5g-sub2.jpg"}'>
+                    <img src="https://sp.yimg.com/ib/th?id=OPHS.AfcFBaWxfrZbGA474C474&o=5&pid=21.1&w=160&h=105" alt="POCO M6 Plus 5G">
+                    <h3>POCO M6 Plus 5G</h3>
+                    <p>Snapdragon 4 Gen 2, 6.79 inch 120Hz, 108MP camera, 5030mAh battery.</p>
+                </div>
+                <div class="product-item" data-product-id="40" data-images='{"main": "https://i01.appmifile.com/webfile/globalimg/products/pc/poco-pad/images/poco-pad-list-1.png", "sub1": "https://i01.appmifile.com/webfile/globalimg/products/pc/poco-pad/images/poco-pad-list-2.png", "sub2": "https://i01.appmifile.com/webfile/globalimg/products/pc/poco-pad/images/poco-pad-list-3.png"}'>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.yIiRR53F2EcLppEXjmQR3AHaLW&pid=Api&P=0&h=220" alt="POCO Pad">
+                    <h3>POCO Pad</h3>
+                    <p>12.1 inch 2.5K display, Snapdragon 7 Gen 1, 10000mAh battery, 33W charging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Cột 1: Sản phẩm -->
+            <div class="footer-column">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#">Smartphones</a></li>
+                    <li><a href="#">Wearables</a></li>
+                    <li><a href="#">Smart Home</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                    <li><a href="#">POCO</a></li>
+                </ul>
+            </div>
+            <!-- Cột 2: Hỗ trợ -->
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Warranty Services</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Cột 3: Về Xiaomi -->
+            <div class="footer-column">
+                <h4>About Xiaomi</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                </ul>
+            </div>
+            <!-- Cột 4: Cộng đồng -->
+            <div class="footer-column">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Xiaomi Community</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Fan Club</a></li>
+                </ul>
+            </div>
+            <!-- Cột 5: Liên hệ và mạng xã hội -->
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:support@xiaomi.com">support@xiaomi.com</a></p>
+                <p>Phone: +1-800-123-4567</p>
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/xiaomi" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com/xiaomi" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/xiaomi" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/xiaomi" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Phần bản quyền -->
+        <div class="footer-bottom">
+            <p>© 2025 Xiaomi. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <!-- Thông báo tùy chỉnh -->
+    <div class="custom-alert" id="custom-alert">
+        <p id="alert-message"></p>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="index.js"></script>
+</body>
+</html>
